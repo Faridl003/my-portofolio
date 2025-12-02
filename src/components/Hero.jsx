@@ -1,5 +1,7 @@
 import "boxicons/css/boxicons.min.css";
 import Spline from "@splinetool/react-spline";
+import React, { Suspense } from "react";
+const LazySpline = React.lazy(() => import("@splinetool/react-spline"));
 const Hero = () => {
   return (
     <main
@@ -29,13 +31,13 @@ const Hero = () => {
         {/* Main Heading */}
         <h1
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl
-         font-semibold tracking-wide my-8"
+         font-bold tracking-wide my-8"
         >
           Miftah Faridl <br /> Al Faruqi
         </h1>
 
         <p
-          className="text-base sm:text-lg tracking-wider text-gray-400 
+          className="text-base sm:text-lg tracking-wider text-secondary 
         max-w-[25rem] lg:max-w-[30rem]"
         >
           I bring a strong passion for full-stack web development and a
@@ -74,6 +76,16 @@ const Hero = () => {
         className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2rem] h-full"
         scene="https://prod.spline.design/P1fz1L7XWghQtDuu/scene.splinecode"
       />
+
+      {/* <div
+        data-aos="fade-zoom-in"
+        data-aos-duration="2000"
+        className="hidden lg:block w-[550px] h-[550px] relative"
+      >
+        <Suspense fallback={<div></div>}>
+          <LazySpline scene="https://prod.spline.design/P1fz1L7XWghQtDuu/scene.splinecode" />
+        </Suspense>
+      </div> */}
     </main>
   );
 };
