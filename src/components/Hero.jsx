@@ -67,7 +67,7 @@ const Hero = () => {
         </div>
       </div>
       {/* 3D Robot */}
-      {/* <Spline
+      <Spline
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
@@ -75,7 +75,7 @@ const Hero = () => {
         data-aos-duration="3000"
         className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[45%] sm:left-[-2rem] h-full max-w-[800px] h-[600px]"
         scene="https://prod.spline.design/P1fz1L7XWghQtDuu/scene.splinecode"
-      /> */}
+      />
 
       {/* <div
         data-aos="fade-zoom-in"
