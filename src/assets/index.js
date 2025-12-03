@@ -35,6 +35,16 @@ import satuhikmah from "./company/satuhikmah.png";
 import jakarta from "./company/jakarta.png";
 import kominfo from "./company/kominfo.png";
 
+import mysql from "./tech/mysql.png";
+import aws from "./tech/aws.png";
+import postgree from "./tech/postgree.png";
+import java from "./tech/java.png";
+import angular from "./tech/angular.png";
+
+import satuhikmahweb from "./satuhikmah-web.png";
+import anterajaweb from "./anteraja-web.png";
+import movieweb from "./movie-web.png";
+
 export {
   logo,
   backend,
@@ -68,4 +78,12 @@ export {
   satuhikmah,
   jakarta,
   kominfo,
+  mysql,
+  aws,
+  postgree,
+  java,
+  angular,
+  satuhikmahweb,
+  anterajaweb,
+  movieweb,
 };

@@ -50,7 +50,7 @@ const Hero = () => {
             className="border border-[#2a2a2a] py-2 sm:py-3 px-4
           sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider 
           transition-all duration-300 hover:bg-[#1a1a1a]"
-            href="#"
+            href="#Contact"
           >
             Documentation &nbsp;
             <i class="bx bx-link-external"></i>
@@ -59,7 +59,7 @@ const Hero = () => {
             className="border border-[#2a2a2a] py-2 sm:py-3 px-8
           sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider 
           transition-all bg-gray-300 text-black duration-300 hover:bg-[#1a1a1a]"
-            href="#"
+            href="#about"
           >
             GetStarted &nbsp;
             <i class="bx bx-link-external"></i>
@@ -67,15 +67,15 @@ const Hero = () => {
         </div>
       </div>
       {/* 3D Robot */}
-      <Spline
+      {/* <Spline
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
         data-aos-offset="0"
         data-aos-duration="3000"
-        className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2rem] h-full"
+        className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[45%] sm:left-[-2rem] h-full max-w-[800px] h-[600px]"
         scene="https://prod.spline.design/P1fz1L7XWghQtDuu/scene.splinecode"
-      />
+      /> */}
 
       {/* <div
         data-aos="fade-zoom-in"

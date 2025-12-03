@@ -27,6 +27,14 @@ import {
   satuhikmah,
   kominfo,
   jakarta,
+  mysql,
+  aws,
+  postgree,
+  java,
+  angular,
+  satuhikmahweb,
+  movieweb,
+  anterajaweb,
 } from "../assets";
 
 export const navLinks = [
@@ -46,19 +54,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+  // {
+  //   title: "React Native Developer",
+  //   icon: mobile,
+  // },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Canva",
     icon: creator,
   },
 ];
@@ -76,10 +84,11 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  { name: "Java", icon: java },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -88,6 +97,7 @@ const technologies = [
     name: "Redux Toolkit",
     icon: redux,
   },
+  { name: "Angular", icon: angular },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -96,9 +106,18 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "MySQL",
+    icon: mysql,
+  },
+  { name: "AWS", icon: aws },
+  {
+    name: "Postgree",
+    icon: postgree,
   },
   {
     name: "Three JS",
@@ -112,10 +131,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
@@ -191,30 +210,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "SatuHikmah",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed and deployed a highly responsive community platform (satuhikmah.id) designed to promote self-development and career programs for Muslim youth. The project involved translating a complete, pre-existing design from Figma intofunctional code, ensuring pixel-perfect accuracy and consistency. This platform features clear, user-friendly navigation forflagship spiritual programs (e.g., Kembara Hikmah) and digital products.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: satuhikmahweb,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Real-Time Movie & TV Dashboard",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed a Real-Time Movie & TV Dashboard using React.js for the frontend, powered by Appwrite as the backend service, and integrating the TMDB API for data fetching. The platform features dynamic, real-time trending views and arobust universal search function that allows users to explore movies and TV shows instantly. Implemented RESTful APIconsumption and utilized Appwrite for seamless user management (Authentication/Database) and data persistence.",
     tags: [
       {
         name: "react",
@@ -225,24 +240,24 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: movieweb,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "AnterAja Website",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Contributed as a Frontend Developer to the main Anteraja corporate website, focusing on the implementation of several new content pages into the production environment. This project involved accurately translating visual designsprovided in Figma into fully functional Angular components, utilizing the Bootstrap framework for styling and ensuring a responsiveand consistent user experience across all devices. This contribution enriched the user journey by supporting thedisplay of new corporate information and services.",
     tags: [
       {
-        name: "nextjs",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
@@ -250,7 +265,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: anterajaweb,
     source_code_link: "https://github.com/",
   },
 ];
