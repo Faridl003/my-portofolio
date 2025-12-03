@@ -2,6 +2,7 @@ import React from "react";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
+import { gradient } from "./assets";
 
 import { BrowserRouter } from "react-router-dom";
 
@@ -31,7 +32,7 @@ const App = () => {
           {/* Gradien Image */}
           <img
             className="absolute top-0 right-0 opacity-60 -z-10"
-            src="/gradient.png"
+            src={gradient}
             alt="Gradient Img"
           />
 

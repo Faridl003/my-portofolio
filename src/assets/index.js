@@ -45,6 +45,8 @@ import satuhikmahweb from "./satuhikmah-web.png";
 import anterajaweb from "./anteraja-web.png";
 import movieweb from "./movie-web.png";
 
+import gradient from "./gradient.png";
+
 export {
   logo,
   backend,
@@ -86,4 +88,5 @@ export {
   satuhikmahweb,
   anterajaweb,
   movieweb,
+  gradient,
 };

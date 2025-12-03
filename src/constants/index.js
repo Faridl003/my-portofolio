@@ -35,6 +35,7 @@ import {
   satuhikmahweb,
   movieweb,
   anterajaweb,
+  gradient,
 } from "../assets";
 
 export const navLinks = [
