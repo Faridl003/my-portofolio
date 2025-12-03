@@ -53,7 +53,7 @@ const Navbar = () => {
         >
           Project
         </a>
-        <a
+        {/* <a
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="2500"
@@ -61,10 +61,16 @@ const Navbar = () => {
           href="#contact"
         >
           Contact
-        </a>
+        </a> */}
       </nav>
 
       <button
+        onClick={() =>
+          window.open(
+            "https://wa.me/6281291112371?text=Halo%20saya%20ingin%20menghubungi%20Anda",
+            "_blank"
+          )
+        }
         className="hidden md:block bg-[#a7a7a7] text-black py-3 px-8 
       rounded-full border-none font-medium transition-all duration-500 hover:bg-white cursor-pointer z-50"
       >
