@@ -50,9 +50,11 @@ const Hero = () => {
             className="border border-[#2a2a2a] py-2 sm:py-3 px-4
           sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider 
           transition-all duration-300 hover:bg-[#1a1a1a]"
-            href="#Contact"
+            href="https://drive.google.com/file/d/1NUubTiTggVcLw0tGdJ-ayjNFEl_xSL39/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Documentation &nbsp;
+            Download CV &nbsp;
             <i class="bx bx-link-external"></i>
           </a>
           <a
@@ -67,7 +69,7 @@ const Hero = () => {
         </div>
       </div>
       {/* 3D Robot */}
-      {/* <Spline
+      <Spline
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-delay="300"
@@ -75,7 +77,7 @@ const Hero = () => {
         data-aos-duration="3000"
         className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[45%] sm:left-[-2rem] h-full max-w-[800px] h-[600px]"
         scene="https://prod.spline.design/P1fz1L7XWghQtDuu/scene.splinecode"
-      /> */}
+      />
 
       {/* <div
         data-aos="fade-zoom-in"

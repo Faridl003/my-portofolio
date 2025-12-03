@@ -46,6 +46,7 @@ import anterajaweb from "./anteraja-web.png";
 import movieweb from "./movie-web.png";
 
 import gradient from "./gradient.png";
+import link from "./link.png";
 
 export {
   logo,
@@ -89,4 +90,5 @@ export {
   anterajaweb,
   movieweb,
   gradient,
+  link,
 };

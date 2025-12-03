@@ -31,7 +31,7 @@ const Navbar = () => {
           data-aos-easing="linear"
           data-aos-duration="1000"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-          href="#"
+          href="#about"
         >
           Profile
         </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
           data-aos-easing="linear"
           data-aos-duration="1500"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-          href="#"
+          href="#experience"
         >
           Experience
         </a>
@@ -49,7 +49,7 @@ const Navbar = () => {
           data-aos-easing="linear"
           data-aos-duration="2000"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-          href="#"
+          href="#works"
         >
           Project
         </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
           data-aos-easing="linear"
           data-aos-duration="2500"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-          href="#"
+          href="#contact"
         >
           Contact
         </a>
@@ -88,25 +88,25 @@ const Navbar = () => {
         <nav className="flex flex-col gap-6 items-center">
           <a
             className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#"
+            href="#about"
           >
             Profile
           </a>
           <a
             className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#"
+            href="#experience"
           >
             Experience
           </a>
           <a
             className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#"
+            href="#works"
           >
             Project
           </a>
           <a
             className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#"
+            href="#contact"
           >
             Contact
           </a>

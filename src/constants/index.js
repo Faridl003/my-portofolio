@@ -225,7 +225,7 @@ const projects = [
       },
     ],
     image: satuhikmahweb,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Faridl003/satuhikmah",
   },
   {
     name: "Real-Time Movie & TV Dashboard",
@@ -246,7 +246,7 @@ const projects = [
       },
     ],
     image: movieweb,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Faridl003/react-movies",
   },
   {
     name: "AnterAja Website",
@@ -267,7 +267,7 @@ const projects = [
       },
     ],
     image: anterajaweb,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://anteraja.id/id/umkm",
   },
 ];
 
