@@ -36,6 +36,7 @@ import {
   movieweb,
   anterajaweb,
   gradient,
+  portofolio,
 } from "../assets";
 
 export const navLinks = [
@@ -268,6 +269,31 @@ const projects = [
     ],
     image: anterajaweb,
     source_code_link: "https://anteraja.id/id/umkm",
+  },
+  {
+    name: "My Portofolio Website",
+    description:
+      "This is an interactive and responsive personal portfolio website built with React.js, Tailwind CSS, Three.js, and Framer Motion. It showcases my profile, experience, and projects, providing a modern and dynamic user experience with smooth animations, 3D elements, and responsive design across all devices.",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ThreeJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: " Framer Motion",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portofolio,
+    source_code_link: "https://github.com/Faridl003/my-portofolio",
   },
 ];
 

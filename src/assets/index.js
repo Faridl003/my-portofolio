@@ -47,6 +47,7 @@ import movieweb from "./movie-web.png";
 
 import gradient from "./gradient.png";
 import link from "./link.png";
+import portofolio from "./portfolio.png";
 
 export {
   logo,
@@ -91,4 +92,5 @@ export {
   movieweb,
   gradient,
   link,
+  portofolio,
 };
