@@ -224,6 +224,10 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Responsive Design",
+        color: "pink-text-gradient",
+      },
     ],
     image: satuhikmahweb,
     source_code_link: "https://github.com/Faridl003/satuhikmah",
@@ -245,6 +249,10 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Responsive Design",
+        color: "pink-text-gradient",
+      },
     ],
     image: movieweb,
     source_code_link: "https://github.com/Faridl003/react-movies",
@@ -264,6 +272,10 @@ const projects = [
       },
       {
         name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Responsive Design",
         color: "pink-text-gradient",
       },
     ],
@@ -289,6 +301,10 @@ const projects = [
       },
       {
         name: " Framer Motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Responsive Design",
         color: "pink-text-gradient",
       },
     ],
