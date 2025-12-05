@@ -1,15 +1,12 @@
+import React from "react";
 import "boxicons/css/boxicons.min.css";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
   // Simple Function to Toggle Mobile Menu
-  const toggleMobileMenu = () => {
-    const mobileMenu = document.getElementById("mobileMenu");
-    if (mobileMenu.classList.contains("hidden")) {
-      mobileMenu.classList.remove("hidden");
-    } else {
-      mobileMenu.classList.add("hidden");
-    }
-  };
 
   return (
     <header
@@ -78,46 +75,49 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Menu Icon */}
-      <button
-        onClick={toggleMobileMenu}
-        className="md:hidden text-3xl p-2 z-50"
-      >
+      <button onClick={toggleMenu} className="md:hidden text-3xl p-2 z-50">
         <i class="bx bx-menu"></i>
       </button>
 
       {/* Mobile Menu - Hidden by default */}
-      <div
-        id="mobileMenu"
-        className="hidden fixed top-16 bottom-0 right-0
+      {isOpen && (
+        <div
+          id="mobileMenu"
+          className=" fixed top-16 bottom-0 right-0
        left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 bg-black bg-opacity-70 backdrop-blur- md"
-      >
-        <nav className="flex flex-col gap-6 items-center">
-          <a
-            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#about"
-          >
-            Profile
-          </a>
-          <a
-            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#experience"
-          >
-            Experience
-          </a>
-          <a
-            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#works"
-          >
-            Project
-          </a>
-          <a
-            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#contact"
-          >
-            Contact
-          </a>
-        </nav>
-      </div>
+        >
+          <nav className="flex flex-col gap-6 items-center">
+            <a
+              className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
+              href="#about"
+              onClick={closeMenu}
+            >
+              Profile
+            </a>
+            <a
+              className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
+              href="#experience"
+              onClick={closeMenu}
+            >
+              Experience
+            </a>
+            <a
+              className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
+              href="#works"
+              onClick={closeMenu}
+            >
+              Project
+            </a>
+            <a
+              className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
+              href="#contact"
+              onClick={closeMenu}
+            >
+              Contact
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
