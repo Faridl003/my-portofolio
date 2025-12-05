@@ -83,7 +83,7 @@ const Navbar = () => {
       {isOpen && (
         <div
           id="mobileMenu"
-          className=" fixed top-16 bottom-0 right-0
+          className="fixed top-16 bottom-0 right-0
        left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 bg-black bg-opacity-70 backdrop-blur- md"
         >
           <nav className="flex flex-col gap-6 items-center">
@@ -108,13 +108,13 @@ const Navbar = () => {
             >
               Project
             </a>
-            <a
+            {/* <a
               className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
               href="#contact"
               onClick={closeMenu}
             >
               Contact
-            </a>
+            </a> */}
           </nav>
         </div>
       )}
