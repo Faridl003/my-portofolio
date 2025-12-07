@@ -36,7 +36,7 @@ import {
   movieweb,
   anterajaweb,
   gradient,
-  portofolio,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -308,7 +308,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: portofolio,
+    image: portfolio,
     source_code_link: "https://github.com/Faridl003/my-portofolio",
   },
 ];

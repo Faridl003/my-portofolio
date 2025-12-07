@@ -1,7 +1,8 @@
 import "boxicons/css/boxicons.min.css";
-import Spline from "@splinetool/react-spline";
-import React, { Suspense } from "react";
-const LazySpline = React.lazy(() => import("@splinetool/react-spline"));
+import React from "react";
+import { Tilt } from "react-tilt";
+import { profile } from "../assets";
+
 const Hero = () => {
   return (
     <main
@@ -16,7 +17,7 @@ const Hero = () => {
       >
         <div
           className="relative w-[95%] sm:w-48 h-10 
-      bg-gradient-to-r from-[#656565] to-[#e99b63]
+      bg-gradient-to-r from-[#00cea8] to-[#bf61ff]
        shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full"
         >
           <div
@@ -68,26 +69,33 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      {/* 3D Robot */}
-      <Spline
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
-        data-aos-duration="3000"
-        className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[45%] sm:left-[-2rem] h-full max-w-[800px] h-[600px]"
-        scene="https://prod.spline.design/P1fz1L7XWghQtDuu/scene.splinecode"
-      />
-
-      {/* <div
-        data-aos="fade-zoom-in"
-        data-aos-duration="2000"
-        className="hidden lg:block w-[550px] h-[550px] relative"
-      >
-        <Suspense fallback={<div></div>}>
-          <LazySpline scene="https://prod.spline.design/P1fz1L7XWghQtDuu/scene.splinecode" />
-        </Suspense>
-      </div> */}
+      {/* Profile Image */}
+      <div className="absolute top-[35%] lg:top-[25%] md:top-[20%] sm:top-[25%] xs:top-[20%] right-0 lg:right-[5%] w-full lg:w-1/2 flex justify-center lg:justify-end z-0">
+        <Tilt
+          options={{
+            max: 25,
+            scale: 1.05,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+          }}
+          className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px]"
+        >
+          <div className="w-full h-full relative p-[4px] rounded-full bg-gradient-to-tr from-[#00cea8] via-[#bf61ff] to-[#ff56f3] animate-float">
+            <div className="bg-primary w-full h-full rounded-full overflow-hidden relative">
+              <img
+                src={profile}
+                alt="Miftah Faridl Profile"
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay for "cool" look */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none mix-blend-overlay"></div>
+            </div>
+            {/* Glowing blur effect behind */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-[#00cea8] via-[#bf61ff] to-[#ff56f3] rounded-full blur-2xl opacity-30 -z-10 animate-pulse"></div>
+          </div>
+        </Tilt>
+      </div>
     </main>
   );
 };

@@ -44,10 +44,11 @@ import angular from "./tech/angular.png";
 import satuhikmahweb from "./satuhikmah-web.png";
 import anterajaweb from "./anteraja-web.png";
 import movieweb from "./movie-web.png";
+import portfolio from "./portfolio.png";
 
 import gradient from "./gradient.png";
 import link from "./link.png";
-import portofolio from "./portfolio.png";
+import profile from "./profile.png";
 
 export {
   logo,
@@ -92,5 +93,6 @@ export {
   movieweb,
   gradient,
   link,
-  portofolio,
+  portfolio,
+  profile,
 };
