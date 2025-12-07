@@ -70,7 +70,12 @@ const Hero = () => {
         </div>
       </div>
       {/* Profile Image */}
-      <div className="absolute top-[35%] lg:top-[25%] md:top-[20%] sm:top-[25%] xs:top-[20%] right-0 lg:right-[5%] w-full lg:w-1/2 flex justify-center lg:justify-end z-0">
+      <div className="absolute top-[35%] lg:top-[25%] md:top-[20%] sm:top-[25%] xs:top-[20%] right-0 lg:right-[5%] w-full lg:w-1/2 flex justify-center lg:justify-end z-0" 
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+      data-aos-duration="3000">
         <Tilt
           options={{
             max: 25,
