@@ -16,6 +16,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Footer,
 } from "./components";
 
 const App = () => {
@@ -55,6 +56,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </main>
+      <Footer />
     </BrowserRouter>
   );
 };
