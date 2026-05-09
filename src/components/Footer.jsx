@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#050816] pt-12 pb-8 border-t border-[#2a2a2a] relative z-10">
       <div className={`${styles.paddingX} max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6`}>
-        
+
         {/* Brand / Logo Section */}
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-white font-bold text-[28px] tracking-widest cursor-pointer group">
@@ -19,24 +19,24 @@ const Footer = () => {
 
         {/* Social Links */}
         <div className="flex gap-5">
-          <a href="#" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
+          <a href="https://www.linkedin.com/in/miftahfaridla/" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
             <i className="bx bxl-linkedin text-2xl text-white"></i>
           </a>
-          <a href="#" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
+          <a href="https://github.com/Faridl003" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
             <i className="bx bxl-github text-2xl text-white"></i>
           </a>
-          <a href="#" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
+          <a href="mailto:[miftahfaridl2001@gmail.com]" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
             <i className="bx bx-envelope text-2xl text-white"></i>
           </a>
-          <a href="#" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
+          {/* <a href="#" className="w-12 h-12 rounded-full bg-[#100d25] flex items-center justify-center border border-[#2a2a2a] hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] hover:border-transparent transition-all duration-300 hover:-translate-y-1 shadow-lg">
             <i className="bx bxl-instagram text-2xl text-white"></i>
-          </a>
+          </a> */}
         </div>
       </div>
 
       {/* Divider */}
       <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#2a2a2a] to-transparent mt-10"></div>
-      
+
       {/* Copyright & Tech Stack */}
       <div className={`${styles.paddingX} max-w-7xl mx-auto mt-6 flex flex-col sm:flex-row justify-between items-center gap-4`}>
         <p className="text-[#aaa6c3] text-[13px] sm:text-[14px]">

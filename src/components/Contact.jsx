@@ -121,17 +121,17 @@ const Contact = () => {
             Whether you have a question, a project in mind, or just want to connect, I'll try my best to get back to you!
           </p>
 
-          <div className="mt-10 flex gap-5">
+          {/* <div className="mt-10 flex gap-5">
             <a href="mailto:miftahfaridl@example.com" className="w-14 h-14 rounded-full bg-[#151030] flex items-center justify-center hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(0,206,168,0.4)] hover:-translate-y-1">
               <i className="bx bx-mail-send text-2xl text-white"></i>
             </a>
-            <a href="#" className="w-14 h-14 rounded-full bg-[#151030] flex items-center justify-center hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(191,97,255,0.4)] hover:-translate-y-1">
+            <a href="https://www.linkedin.com/in/miftahfaridla/" className="w-14 h-14 rounded-full bg-[#151030] flex items-center justify-center hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(191,97,255,0.4)] hover:-translate-y-1">
               <i className="bx bxl-linkedin text-2xl text-white"></i>
             </a>
-            <a href="#" className="w-14 h-14 rounded-full bg-[#151030] flex items-center justify-center hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(255,86,243,0.4)] hover:-translate-y-1">
+            <a href="https://github.com/Faridl003" className="w-14 h-14 rounded-full bg-[#151030] flex items-center justify-center hover:bg-gradient-to-r hover:from-[#00cea8] hover:to-[#bf61ff] transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(255,86,243,0.4)] hover:-translate-y-1">
               <i className="bx bxl-github text-2xl text-white"></i>
             </a>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </div>
