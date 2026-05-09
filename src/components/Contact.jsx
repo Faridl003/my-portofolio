@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import "boxicons/css/boxicons.min.css";
 
 import { styles } from "../styles";
@@ -30,16 +31,43 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Placeholder for actual EmailJS integration
-    setTimeout(() => {
-      setLoading(false);
-      alert("Thank you. I will get back to you as soon as possible.");
-      setForm({
-        name: "",
-        email: "",
-        message: "",
-      });
-    }, 2000);
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          time: new Date().toLocaleString()
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error("EmailJS Error:", error);
+
+          // Mengecek apakah import.meta.env terbaca
+          if (!import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY) {
+            alert("Error: Kunci EmailJS tidak terbaca. Coba matikan terminal (Ctrl+C) dan jalankan npm run dev lagi.");
+            return;
+          }
+
+          // Menampilkan error asli dari EmailJS
+          alert("Gagal mengirim pesan: " + (error.text || "Silakan cek Console (F12) untuk detailnya."));
+        }
+      );
   };
 
   return (
